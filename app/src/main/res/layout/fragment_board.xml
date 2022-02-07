@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        style="@style/LottieAnimationView"/>
+
+
+    <TextView
+        android:id="@+id/text_1"
+        style="@style/TextView_welcome_to"
+        android:layout_marginHorizontal="50dp"
+        android:text="Welcome to productive life !"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view" />
+
+
+    <TextView
+        android:id="@+id/description_tv"
+        style="@style/TextView_collaboration"
+        android:text="Collaboration with students" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/skip_btn_one"
+        style="@style/MaterialButton"
+        android:text="Skip"
+        app:icon="@drawable/ic_arrow_forward"
+        app:iconGravity="textEnd"
+        app:iconTint="@android:color/holo_blue_light" />
+
+    <TextView
+        android:id="@+id/hint_tv"
+        style="@style/YouHaveAnAccountAlready"
+        android:text="@string/you_have_an_account_already" />
+
+    <TextView
+        android:id="@+id/sign_in_btn"
+        style="@style/MaterialButton"
+
+        android:text="Sign in" />
+
+</LinearLayout>
